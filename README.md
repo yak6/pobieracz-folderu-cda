@@ -4,6 +4,6 @@ Ten projekt to narzędzie, które umożliwi szybkie pobranie serialu, filmów z 
 
 # 📋 Wymagania
 
-- Python3 na komputerze
+- Python na komputerze
 - Biblioteki **yt_dlp**, **beautifulsoup4**, **requests**
   
