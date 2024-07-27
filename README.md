@@ -1,5 +1,9 @@
-# pobieracz-folderu-cda
+# 📚 Opis projektu
 
-Przydatne narzędzie mojego autorstwa, które umożliwi zapisanie całego folderu z popularnego serwisu streamingowego, jakim jest CDA. 
-Myślę, że może on się mocno przydać zważając na fakt, że sporo tych pobieraczy w sieci (mam na myśli te webowe) umożliwia pobranie 
-tylko jednego filmu na raz, a na nie których stronach trzeba wklejać źródło strony, co jest czasochłonne i po prostu nie wygodne.
+Ten projekt to narzędzie, które umożliwi szybkie pobranie serialu, filmów z folderu CDA, ponieważ większość pobieraczy nie oferuje takiej możliwości.
+
+# 📋 Wymagania
+
+- Python3 na komputerze
+- Biblioteki **yt_dlp**, **beautifulsoup4**, **requests**
+  
