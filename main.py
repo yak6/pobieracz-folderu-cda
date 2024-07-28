@@ -2,7 +2,8 @@ from bs4 import BeautifulSoup
 import requests
 import yt_dlp
 import os
-url = "https://www.cda.pl/SzowskiCDA/folder/62663177" # tutaj podaję link folderu CDA
+#"https://www.cda.pl/SzowskiCDA/folder/62663177" - tak powinien wyglądać link.
+url = input("URL >> ")
 def get_tytul(url): # funkcja, która odpowiada za zgarnięcie tytułu folderu
     titles = []
     resp = requests.get(url)
