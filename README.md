@@ -9,4 +9,5 @@ Pobieracz Folderu CDA to bardzo przydatne narzędzie, które umożliwi pobranie 
    ```pip install requests beautifulsoup4 yt_dlp``` -- instaluje ona potrzebne biblioteki
 3. uruchom skrypt i pobieraj!
 # Uwagi
-Pamiętaj, jeśli chcesz pobrać drugą stronę folderu należy dodać **/2** na końcu odnośnika folderu. 
+1. Pamiętaj, jeśli chcesz pobrać drugą stronę folderu należy dodać **/2** na końcu odnośnika folderu. 
+2. By zainstalować biblioteki potrzebujesz system zarządzania pakietami **pip**. Informację jak zainstalować znajdziesz [tutaj](https://pip.pypa.io/en/stable/installation/)
