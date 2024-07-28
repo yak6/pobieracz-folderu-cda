@@ -2,8 +2,10 @@ from bs4 import BeautifulSoup
 import requests
 import yt_dlp
 import os
-#"https://www.cda.pl/SzowskiCDA/folder/62663177" - tak powinien wyglądać link.
-url = input("URL >> ")
+# przykladowe linki folderow:
+# https://www.cda.pl/SzowskiCDA/folder/62663177 - link do folderu
+# https://www.cda.pl/SzowskiCDA/folder/62663177/2 - link do tego samego folderu, ale strona druga.
+url = input("URL>> ") # tutaj podaję link folderu CDA
 def get_tytul(url): # funkcja, która odpowiada za zgarnięcie tytułu folderu
     titles = []
     resp = requests.get(url)
@@ -37,8 +39,11 @@ def pobierz(url, sciezka): # funkcja dla biblioteki ydl, która pobiera film ze 
         ydl.download([url])
 # wszystko zaczyna się dziać tutaj!
 
-tytul = get_tytul(url)[1] # do stringa "tytul" przypisuje wartość, którą zwraca funkcja get_titles() (zwraca listę więc biorę drugi element z listy).
-os.mkdir(tytul) # tworzę folder, który nosi nazwę folderu CDA
+tytul = get_tytul(url)[1]# do stringa "tytul" przypisuje wartość, którą zwraca funkcja get_titles() (zwraca listę więc biorę drugi element z listy).
+try:                  
+    os.mkdir(tytul) #tworzymy folder, try i except musi być. W przypadku gdy ktoś chce na przykład uzupełnic folder skrypt nie moze sie wywalac.
+except:  
+    pass
 for link, title in get_link(url).items(): # w pętli for z funkcji get_link(), która zwraca dictionary biorę link wraz z tytułem. 
     sciezka = f"{tytul}\\{title}.mp4" 
     pobierz(link, sciezka) # pobieranie filmu
