@@ -1,5 +1,5 @@
-# Pobieracz Folderu CDA
-Pobieracz Folderu CDA to bardzo przydatne narzędzie, które umożliwi pobranie zawartości folderu CDA.
+# O skrypcie
+Pobieracz Folderu CDA to bardzo przydatne narzędzie, które umożliwi pobranie zawartości folderu CDA, podając tylko link.
 # Wymagania
 - pip
 - Python 3.x
