@@ -44,6 +44,7 @@ try:
     os.mkdir(tytul) #tworzymy folder, try i except musi być. W przypadku gdy ktoś chce na przykład uzupełnic folder skrypt nie moze sie wywalac.
 except:  
     pass
-for link, title in get_link(url).items(): # w pętli for z funkcji get_link(), która zwraca dictionary biorę link wraz z tytułem. 
+ltdict = get_link(url).items()
+for link, title in ltdict: 
     sciezka = f"{tytul}\\{title}.mp4" 
     pobierz(link, sciezka) # pobieranie filmu
